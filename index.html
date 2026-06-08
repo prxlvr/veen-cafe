@@ -1,162 +1,168 @@
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-  <h1 style="margin-bottom:0.5rem; font-size:1.3em; font-weight:600;">Veen Cafe Info</h1>
-  <div style="font-family: Arial, Helvetica, sans-serif; color:#333; line-height:1.4; background:#f3f3f3; padding:20px; border-radius:12px; max-width:600px; margin:auto;">
-    <h1 style="margin-bottom:0.5rem; font-size:1.3em; font-weight:600;">Belangrijke gegevens</h1>
-    <div style="background:#e7e7e7; padding:15px; border-radius:10px; margin-bottom:20px;">
-      <ol style="display:flex; flex-direction:column; gap:1.2em; padding-left:1.2em;">
-        <li style="display:flex; flex-direction:column; gap:.25em;">
-          <p style="margin:0;"><strong>URL:</strong> <a href="https://watch.veen.cafe">https://watch.veen.cafe</a></p>
+  <div class="glass page">
+    <img src="/images/veen-cafe.png" alt="Veen Cafe logo" class="logo">
+    <h1>Belangrijke gegevens</h1>
+    <div class="glass container">
+      <ol>
+        <li>
+          <p><strong>URL:</strong> <a href="https://watch.veen.cafe">https://watch.veen.cafe</a></p>
         </li>
-        <li style="display:flex; flex-direction:column; gap:.25em;">
-          <p style="margin:0;"><strong>Gebruikersnaam:</strong> {username}</p>
+        <li>
+          <p><strong>Gebruikersnaam:</strong> <em>voor- en achternaam</em></p>
         </li>
-        <li style="display:flex; flex-direction:column; gap:.25em;">
-          <p style="margin:0;"><strong>Wachtwoord:</strong> <em>je zelfgekozen wachtwoord</em></p>
+        <li>
+          <p><strong>Wachtwoord:</strong> <em>je zelfgekozen wachtwoord</em></p>
           <small><em>(Je kunt je gegevens later wijzigen via <a href="https://account.veen.cafe">https://account.veen.cafe</a>)</em></small>
         </li>
       </ol>
     </div>
-    <h1 style="margin-bottom:0.5rem; font-size:1.3em; font-weight:600;">Aanbevolen kijkopties</h1>
-    <div style="background:#e7e7e7; padding:15px; border-radius:10px; margin-bottom:20px;">
-      <h2 style="margin-bottom:0.5rem; font-size:1.15em; font-weight:600;">Windows</h2>
-      <div style="background:#dbdbdb; padding:1em; border-radius:8px; margin-bottom:20px;">
-        <ol style="display:flex; flex-direction:column; gap:1.2em; padding-left:1.2em;">
-          <li style="display:flex; flex-direction:column; gap:.25em;">
-            <p style="margin:0;">
+
+
+
+    <h1>Aanbevolen kijkopties</h1>
+    <div class="glass container">
+      <h2>Windows</h2>
+      <div class="glass card">
+        <ol>
+          <li>
+            <p>
               Jellyfin Desktop
-              <img src="https://seerr.dev/os_logo_filled.svg"
-                   alt="Seerr"
-                   style="height:1em; width:1em; vertical-align:-2px; margin-left:.25em;">
+              <img src="https://seerr.dev/os_logo_filled.svg" alt="Seerr badge" class="seerr-badge">
             </p>
             <small><em>(Nog in beta, hierdoor moeilijker te downloaden)</em></small>
             <a href="https://github.com/jellyfin/jellyfin-desktop/actions/workflows/build-windows.yml" target="_blank" rel="noopener">
-              <img src="https://user-images.githubusercontent.com/33416429/92813512-27f0bb80-f376-11ea-8562-ee2b3e416aec.png" alt="Available on GitHub" style="height:2.5em; border-radius:10px;">
+              <github-btn></github-btn>
             </a>
           </li>
-          <li style="display:flex; flex-direction:column; gap:.25em;">
-            <p style="margin:0;">
+
+          <li>
+            <p>
               Website
-              <img src="https://seerr.dev/os_logo_filled.svg"
-                   alt="Seerr"
-                   style="height:1em; width:1em; vertical-align:-2px; margin-left:.25em;">
+              <img src="https://seerr.dev/os_logo_filled.svg" alt="Seerr badge" class="seerr-badge">
             </p>
             <a href="https://watch.veen.cafe" target="_blank" rel="noopener">
-              <div style="display:flex; justify-content:center; align-items:center; background:#000; padding:4px; border-radius:7px; height:2em; width:6.6em;">
-                <img src="https://cdn.jsdelivr.net/gh/prxlvr/veen-cafe@latest/images/veen-cafe.png" alt="Veen Cafe" style="height:1.25em;">
+              <div class="custom-client-btn">
+                <img src="/images/veen-cafe.png" alt="Veen Cafe Logo">
               </div>
             </a>
           </li>
-          <li style="display:flex; flex-direction:column; gap:.25em;">
-            <p style="margin:0;">Jellyfin MPV Shim</p>
+
+          <li>
+            <p>Jellyfin MPV Shim</p>
             <small><em>Geavanceerd</em></small>
             <small><em>(Beste beeldkwaliteit, snelste laadtijd door local transcoding)</em></small>
             <a href="https://github.com/jellyfin/jellyfin-mpv-shim/releases" target="_blank" rel="noopener">
-              <img src="https://user-images.githubusercontent.com/33416429/92813512-27f0bb80-f376-11ea-8562-ee2b3e416aec.png" alt="Available on GitHub" style="height:2.5em; border-radius:10px;">
+              <github-btn></github-btn>
             </a>
           </li>
         </ol>
       </div>
-      <h2 style="margin-bottom:0.5rem; font-size:1.15em; font-weight:600;">Mac</h2>
-      <div style="background:#dbdbdb; padding:1em; border-radius:8px; margin-bottom:20px;">
-        <ol style="display:flex; flex-direction:column; gap:1.2em; padding-left:1.2em;">
-          <li style="display:flex; flex-direction:column; gap:.25em;">
-            <p style="margin:0;">
+
+
+
+      <h2>Mac</h2>
+      <div class="glass card">
+        <ol>
+          <li>
+            <p>
               Jellyfin Desktop
-              <img src="https://seerr.dev/os_logo_filled.svg"
-                   alt="Seerr"
-                   style="height:1em; width:1em; vertical-align:-2px; margin-left:.25em;">
+              <img src="https://seerr.dev/os_logo_filled.svg" alt="Seerr badge" class="seerr-badge">
             </p>
             <small><em>(Nog in beta, hierdoor moeilijker te downloaden)</em></small>
             <a href="https://github.com/jellyfin/jellyfin-desktop/actions/workflows/build-macos.yml" target="_blank" rel="noopener">
-              <img src="https://user-images.githubusercontent.com/33416429/92813512-27f0bb80-f376-11ea-8562-ee2b3e416aec.png" alt="Available on GitHub" style="height:2.5em; border-radius:10px;">
+              <github-btn></github-btn>
             </a>
           </li>
-          <li style="display:flex; flex-direction:column; gap:.25em;">
-            <p style="margin:0;">
+
+          <li>
+            <p>
               Website
-              <img src="https://seerr.dev/os_logo_filled.svg"
-                   alt="Seerr"
-                   style="height:1em; width:1em; vertical-align:-2px; margin-left:.25em;">
+              <img src="https://seerr.dev/os_logo_filled.svg" alt="Seerr badge" class="seerr-badge">
             </p>
             <a href="https://watch.veen.cafe" target="_blank" rel="noopener">
-              <div style="display:flex; justify-content:center; align-items:center; background:#000; padding:4px; border-radius:7px; height:2em; width:6.6em;">
-                <img src="https://cdn.jsdelivr.net/gh/prxlvr/veen-cafe@latest/images/veen-cafe.png" alt="Veen Cafe" style="height:1.25em;">
+              <div class="custom-client-btn">
+                <img src="/images/veen-cafe.png" alt="Veen Cafe Logo">
               </div>
             </a>
           </li>
-          <li style="display:flex; flex-direction:column; gap:.25em;">
-            <p style="margin:0;">Infuse</p>
+
+          <li>
+            <p>Infuse</p>
             <small><em>Betaald</em></small>
             <small><em>(Beste beeldkwaliteit, snelste laadtijd door local transcoding)</em></small>
             <a href="https://apps.apple.com/app/infuse/id1136220934" target="_blank" rel="noopener">
-              <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" style="height:2.5em;">
+              <app-store-btn></app-store-btn>
             </a>
           </li>
         </ol>
       </div>
-      <h2 style="margin-bottom:0.5rem; font-size:1.15em; font-weight:600;">iPhone & iPad</h2>
-      <div style="background:#dbdbdb; padding:1em; border-radius:8px; margin-bottom:20px;">
-        <ol style="display:flex; flex-direction:column; gap:1.2em; padding-left:1.2em;">
-          <li style="display:flex; flex-direction:column; gap:.25em;">
-            <p style="margin:0;">
+
+
+
+      <h2>iPhone & iPad</h2>
+      <div class="glass card">
+        <ol>
+          <li>
+            <p>
               Jellyfin
-              <img src="https://seerr.dev/os_logo_filled.svg"
-                   alt="Seerr"
-                   style="height:1em; width:1em; vertical-align:-2px; margin-left:.25em;">
+              <img src="https://seerr.dev/os_logo_filled.svg" alt="Seerr badge" class="seerr-badge">
             </p>
             <a href="https://apps.apple.com/app/jellyfin-mobile/id1480192618" target="_blank" rel="noopener">
-              <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" style="height:2.5em; border-radius:10px;">
+              <app-store-btn></app-store-btn>
             </a>
           </li>
-          <li style="display:flex; flex-direction:column; gap:.25em;">
-            <p style="margin:0;">
+
+          <li>
+            <p>
               Streamyfin
-              <img src="https://seerr.dev/os_logo_filled.svg"
-                   alt="Seerr"
-                   style="height:1em; width:1em; vertical-align:-2px; margin-left:.25em;">
+              <img src="https://seerr.dev/os_logo_filled.svg" alt="Seerr badge" class="seerr-badge">
             </p>
             <small><em>(Mogelijkheid om te casten)</em></small>
             <a href="https://apps.apple.com/app/streamyfin/id6593660679" target="_blank" rel="noopener">
-              <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" style="height:2.5em; border-radius:10px;">
+              <app-store-btn></app-store-btn>
             </a>
           </li>
-          <li style="display:flex; flex-direction:column; gap:.25em;">
-            <p style="margin:0;">Infuse</p>
+
+          <li>
+            <p>Infuse</p>
             <small><em>Betaald</em></small>
             <small><em>(Beste beeldkwaliteit, snelste laadtijd door local transcoding)</em></small>
             <a href="https://apps.apple.com/app/infuse/id1136220934" target="_blank" rel="noopener">
-              <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" style="height:2.5em; border-radius:10px;">
+              <app-store-btn></app-store-btn>
             </a>
           </li>
         </ol>
       </div>
     </div>
-    <h1 style="margin-bottom:0.5rem; font-size:1.3em; font-weight:600;">Titels aanvragen</h1>
-    <div style="background:#e7e7e7; padding:15px; border-radius:10px; margin-bottom:20px;">
-      <ol style="display:flex; flex-direction:column; gap:1.2em; padding-left:1.2em;">
-        <li style="display:flex; flex-direction:column; gap:.25em;">
-          <p style="margin:0;">Seerr</p>
+
+
+
+    <h1>Titels aanvragen</h1>
+    <div class="glass container">
+      <ol>
+        <li>
+          <p>Seerr</p>
           <small><em>(Trending en aankomende titels, zoeken op acteur, genre en meer)</em></small>
           <a href="https://request.veen.cafe" target="_blank" rel="noopener">
-            <div style="display:flex; justify-content:center; align-items:center; background:#000; padding:4px; border-radius:7px; height:2em; width:6.6em;">
-              <img src="https://docs.seerr.dev/img/logo_full.svg" alt="Seerr" style="height:1.7em;">
+            <div class="custom-client-btn">
+              <img src="https://docs.seerr.dev/img/logo_full.svg" alt="Seerr">
             </div>
           </a>
         </li>
-        <li style="display:flex; flex-direction:column; gap:.25em;">
-          <p style="margin:0;">
-            Opties gemarkeerd met
-            <img src="https://seerr.dev/os_logo_filled.svg"
-                 alt="Seerr"
-                 style="height:1em; width:1em; vertical-align:-2px; margin-left:.25em;">
+
+        <li>
+          <p>
+            Opties gemarkeerd met <seerr-badge></seerr-badge>
           </p>
           <small><em>(Enkel zoeken op naam)</em></small>
         </li>
       </ol>
     </div>
-    <p><strong>Veel kijkplezier!</strong> 🍿</p>
   </div>
 </body>

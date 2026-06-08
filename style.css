@@ -1,0 +1,98 @@
+body {
+    background-image: url("/images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color:#111;
+}
+
+h1 {
+    margin-top: 1.5rem;
+    margin-bottom:0.5rem;
+    font-size:1.3em;
+    font-weight:600;
+}
+
+h2 {
+    margin-bottom:0.5rem;
+    font-size:1.15em;
+    font-weight:600;
+}
+
+p {
+    margin:0;
+}
+
+ol {
+    display:flex;
+    flex-direction:column;
+    gap:1.2em;
+    padding-left:1.2em;
+}
+
+li {
+    display:flex;
+    flex-direction:column;
+    gap:.25em;
+}
+
+.logo {
+    width:30em;
+    display: block;
+    margin:auto;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.page {
+    border-radius: 14px;
+    line-height:1.4;
+    padding:20px;
+    max-width:600px;
+    margin:auto;
+}
+
+.container {
+    border-radius: 12px;
+    padding:15px;
+}
+
+.card {
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 20px;
+}
+
+.seerr-badge {
+    height:1em;
+    width:1em;
+    vertical-align:-2px;
+    margin-left:.25em;
+}
+
+.client-btn {
+    height:2.5em;
+}
+
+.custom-client-btn {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#000;
+    padding:4px;
+    border-radius:7px;
+    height:2em;
+    width:6.6em;
+}
+
+.custom-client-btn img {
+    width:6em;
+}
