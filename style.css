@@ -1,15 +1,16 @@
 body {
-    background-image: url("/images/background.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-image:url("/images/background.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Arial,Helvetica,sans-serif;
     color:#111;
+    font-size:1.35em;
 }
 
 h1 {
-    margin-top: 1.5rem;
+    margin-top:1.5rem;
     margin-bottom:0.5rem;
     font-size:1.3em;
     font-weight:600;
@@ -40,35 +41,35 @@ li {
 
 .logo {
     width:30em;
-    display: block;
+    display:block;
     margin:auto;
 }
 
 .glass {
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background:rgba(255,255,255,0.2);
+    box-shadow:0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(5px);
+    border:1px solid rgba(255,255,255,0.2);
 }
 
 .page {
-    border-radius: 14px;
+    border-radius:14px;
     line-height:1.4;
     padding:20px;
-    max-width:600px;
+    max-width:40em;
     margin:auto;
 }
 
 .container {
-    border-radius: 12px;
+    border-radius:12px;
     padding:15px;
 }
 
 .card {
-    border-radius: 8px;
-    padding: 1em;
-    margin-bottom: 20px;
+    border-radius:8px;
+    padding:1em;
+    margin-bottom:20px;
 }
 
 .seerr-badge {
