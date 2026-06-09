@@ -8,7 +8,6 @@ class SeerrBadge extends HTMLElement {
         this.appendChild(img);
     }
 }
-
 customElements.define("seerr-badge", SeerrBadge);
 
 class GitHubBtn extends HTMLElement {
@@ -21,7 +20,6 @@ class GitHubBtn extends HTMLElement {
         this.appendChild(img);
     }
 }
-
 customElements.define("github-btn", GitHubBtn);
 
 class AppStoreBtn extends HTMLElement {
@@ -34,5 +32,16 @@ class AppStoreBtn extends HTMLElement {
         this.appendChild(img);
     }
 }
-
 customElements.define("app-store-btn", AppStoreBtn);
+
+class TestFlightBtn extends HTMLElement {
+    connectedCallback() {
+        const img = document.createElement("img");
+        img.src = "https://askyourself.app/assets/testflight.png";
+        img.alt = "Available on TestFlight";
+        img.className = "client-btn";
+
+        this.appendChild(img);
+    }
+}
+customElements.define("testflight-btn", TestFlightBtn);
