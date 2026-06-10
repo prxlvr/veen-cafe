@@ -1,7 +1,7 @@
 body {
-    background-image:url("/images/background.jpg");
+    background-image:url("https://images.unsplash.com/photo-1635776063043-ab23b4c226f6");
     background-size:cover;
-    background-position:60% center;
+    background-position:center;
     background-attachment:fixed;
 
     padding:1em;
